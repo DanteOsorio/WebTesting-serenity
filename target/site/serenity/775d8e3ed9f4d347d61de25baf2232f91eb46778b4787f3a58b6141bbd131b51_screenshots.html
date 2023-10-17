@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="32c55ca0a1fe71c35f348936719de238c1ee94d2ca5f95d95f3cc34df26b6acb.html">Llenar Dormulario De La Web Demoqa</a></span>
+                > <span class="truncate-60"><a
+                    href="775d8e3ed9f4d347d61de25baf2232f91eb46778b4787f3a58b6141bbd131b51.html">Validar cuadros de texto del formulario </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 11-10-2023 00:38</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Llenar Dormulario De La Web Demoqa</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como Usuario
+Quiero probar la funcionalidad del formulario de la web demoqa
+Para validar su correcto funcionamiento
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="eae8d1ab6afa2145cbfe0e1d2a70fdc39e09d73236abeb5f524725b1218bf2b3.html">FEATURE DEMOQA
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="d00588d1b4e662e5bc781ce4c2649bfcd1f1503605786f4bb29d8980dcd60c58.html">DEMOQA 01
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Validar cuadros de texto del formulario
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="00cafe0885aaee1b65b8099082bfbb486cc2fc4ec078e1d903a145f55fb45f05.png" title=" Y escribimos nuestro nombre en el cuadro de texto Nombre" width="1920"/>
+                <img src="00cafe0885aaee1b65b8099082bfbb486cc2fc4ec078e1d903a145f55fb45f05.png" title=" Escribimos nuestro nombre en el cuadro de texto nombre" width="1920"/>
+                <img src="00cafe0885aaee1b65b8099082bfbb486cc2fc4ec078e1d903a145f55fb45f05.png" title=" Y escribimos nuestro nombre en el cuadro de texto Nombre (completed)" width="1920"/>
+                <img src="021511cece7c93f8d275248a7d85e296f302b19b05d828bf8732ff0f520a2488.png" title=" Y escribimos nuestro apellido en el cuadro de texto Apellido" width="1920"/>
+                <img src="021511cece7c93f8d275248a7d85e296f302b19b05d828bf8732ff0f520a2488.png" title=" Escribimos nuestro apellido en el cuadro de texto apellido" width="1920"/>
+                <img src="021511cece7c93f8d275248a7d85e296f302b19b05d828bf8732ff0f520a2488.png" title=" Y escribimos nuestro apellido en el cuadro de texto Apellido (completed)" width="1920"/>
+                <img src="6c06e9944c8cb366525ef64480dd2c604e90bf062b2f25f32256310c94d5f08c.png" title=" Y escribimos nuestro correo en el cuadro de texto Correo" width="1920"/>
+                <img src="6c06e9944c8cb366525ef64480dd2c604e90bf062b2f25f32256310c94d5f08c.png" title=" Escribimos nuestro correo en el cuadro de texto correo" width="1920"/>
+                <img src="6c06e9944c8cb366525ef64480dd2c604e90bf062b2f25f32256310c94d5f08c.png" title=" Y escribimos nuestro correo en el cuadro de texto Correo (completed)" width="1920"/>
+                <img src="71abc429e53d12405f2dc9889e3eea73185a10daa97cfd595c88e933025b0e8b.png" title=" Y selecionar el genero" width="1920"/>
+                <img src="4dbb3fa66f72fcaebf44ac120005ce041c91420ea5075bbbff77dbe2833b11a3.png" title=" Y escribimos nuestro nro en el cuadro de texto N&uacute;mero de telefono" width="1920"/>
+                <img src="4dbb3fa66f72fcaebf44ac120005ce041c91420ea5075bbbff77dbe2833b11a3.png" title=" Escribimos nuestro nro en el cuadro de texto n&uacute;mero de telefono" width="1920"/>
+                <img src="4dbb3fa66f72fcaebf44ac120005ce041c91420ea5075bbbff77dbe2833b11a3.png" title=" Y escribimos nuestro nro en el cuadro de texto N&uacute;mero de telefono (completed)" width="1920"/>
+                <img src="b43e514a6cc0bb41d48ac12b8e60da76ef889910fa85351f5230d434af449e54.png" title=" Y escribimos algun texto en el text area Direcci&oacute;n actual" width="1920"/>
+                <img src="b43e514a6cc0bb41d48ac12b8e60da76ef889910fa85351f5230d434af449e54.png" title=" Escribimos algun texto en el text area direcci&oacute;n actual" width="1920"/>
+                <img src="b43e514a6cc0bb41d48ac12b8e60da76ef889910fa85351f5230d434af449e54.png" title=" Y escribimos algun texto en el text area Direcci&oacute;n actual (completed)" width="1920"/>
+                <img src="3f2efbd15d5b22e027a195188ea0a6421eeac2d8e2462280ca91ebd3f7e2bcf3.png" title=" Y hacemos click en Submit" width="1920"/>
+                <img src="3f2efbd15d5b22e027a195188ea0a6421eeac2d8e2462280ca91ebd3f7e2bcf3.png" title=" Hacemos click en submit" width="1920"/>
+                <img src="3f2efbd15d5b22e027a195188ea0a6421eeac2d8e2462280ca91ebd3f7e2bcf3.png" title=" Y hacemos click en Submit (completed)" width="1920"/>
+                <img src="97ac9ee9ac5258ab42d9767cfca1557908194948b27dbf35badea49d019689a7.png" title=" Entonces validamos algun elemento" width="1920"/>
+                <img src="97ac9ee9ac5258ab42d9767cfca1557908194948b27dbf35badea49d019689a7.png" title=" Validamos algun elemento" width="1920"/>
+                <img src="97ac9ee9ac5258ab42d9767cfca1557908194948b27dbf35badea49d019689a7.png" title=" Entonces validamos algun elemento (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.54</span>
+</div>
+</body>
+</html>

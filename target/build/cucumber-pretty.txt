@@ -1,0 +1,103 @@
+@nopCommerce
+Característica: registranos y realizar una compra en la web nopCommerce
+  Como usuario
+  Quiero probar la funcionabilidad del fomulario de registro de usuario y compra de producto
+  Para validar su correcto funcionamiento
+
+  @REGISTRO
+  Esquema del escenario: Completar el formulario de registro de usuario nopCommerce [90m# src/test/resources/web/opcommerce.feature:9[0m
+    [36mDado que se necesita abrir la pagina nopCommerce registro en el navegador "<NAVEGADOR>"[0m
+    [36mY seleccionar registro para ingresar al fumulario[0m
+    [36mY seleccionar el género "<GENERO>" usuario[0m
+    [36mY escribir "<NOMBRE>" en el cuadro de texto de nombre[0m
+    [36mY escribir "<APELLIDO>" en el cuadro de texto de apellido[0m
+    [36mY seleccionar fecha de nacimiento"<DIA>" dia "<MES>" mes "<ANIO>" año[0m
+    [36mY escribir el "<CORREO>" en el cuadro de texto de e-mail[0m
+    [36mY escribir "<NOMBRE-COMPANIA>" en el cuadro de texto nombre compañia[0m
+    [36mY seleccionar opcion boletin "<NEWSLETTER>"[0m
+    [36mY escribir contraseña como "<PASSWORD>"[0m
+    [36mY confirmar contraseña como "<CONFIRM-PASSWORD>"[0m
+    [36mY hacemos click en register[0m
+    [36mEntonces validamos que se haya registrado correctamente[0m
+
+    Ejemplos: 
+
+  @nopCommerce @REGISTRO
+  Esquema del escenario: Completar el formulario de registro de usuario nopCommerce    [90m# src/test/resources/web/opcommerce.feature:26[0m
+    [32mDado [0m[32mque se necesita abrir la pagina nopCommerce registro en el navegador "[0m[32m[1mchrome[0m[32m"[0m [90m# opcommerceStepDefinition.queSeNecesitaAbrirLaPaginaDEMOQAFormulariosEnElNavegador(String)[0m
+    [32mY [0m[32mseleccionar registro para ingresar al fumulario[0m                                  [90m# opcommerceStepDefinition.seleccionarRegistroParaIngresarAlFumulario()[0m
+    [32mY [0m[32mseleccionar el género "[0m[32m[1mMale[0m[32m" usuario[0m                                             [90m# opcommerceStepDefinition.seleccionarElGéneroUsuario(String)[0m
+    [32mY [0m[32mescribir "[0m[32m[1mluis[0m[32m" en el cuadro de texto de nombre[0m                                  [90m# opcommerceStepDefinition.escribirEnElCuadroDeTextoDeNombre(String)[0m
+    [32mY [0m[32mescribir "[0m[32m[1mpancho[0m[32m" en el cuadro de texto de apellido[0m                              [90m# opcommerceStepDefinition.escribirEnElCuadroDeTextoDeApellido(String)[0m
+    [32mY [0m[32mseleccionar fecha de nacimiento"[0m[32m[1m28[0m[32m" dia "[0m[32m[1mApril[0m[32m" mes "[0m[32m[1m2009[0m[32m" año[0m                   [90m# opcommerceStepDefinition.seleccionarFechaDeNacimientoDiaMesAño(String,String,String)[0m
+    [32mY [0m[32mescribir el "[0m[32m[1mddd@man.com[0m[32m" en el cuadro de texto de e-mail[0m                        [90m# opcommerceStepDefinition.escribirElEnElCuadroDeTextoDeEMail(String)[0m
+    [32mY [0m[32mescribir "[0m[32m[1mtecnico sac[0m[32m" en el cuadro de texto nombre compañia[0m                     [90m# opcommerceStepDefinition.escribirEnElCuadroDeTextoNombreCompañia(String)[0m
+    [32mY [0m[32mseleccionar opcion boletin "[0m[32m[1msi[0m[32m"[0m                                                  [90m# opcommerceStepDefinition.seleccionarOpcionBoletin(String)[0m
+    [32mY [0m[32mescribir contraseña como "[0m[32m[1m123456[0m[32m"[0m                                                [90m# opcommerceStepDefinition.escribirContraseñaComo(String)[0m
+    [32mY [0m[32mconfirmar contraseña como "[0m[32m[1m123456[0m[32m"[0m                                               [90m# opcommerceStepDefinition.confirmarContraseñaComo(String)[0m
+    [32mY [0m[32mhacemos click en register[0m                                                        [90m# opcommerceStepDefinition.hacemosClickEnRegister()[0m
+    [32mEntonces [0m[32mvalidamos que se haya registrado correctamente[0m                            [90m# opcommerceStepDefinition.validamosQueSeHayaRegistradoCorrectamente()[0m
+
+  @LOGIN
+  Esquema del escenario: Iniciar sesion, agregar la dirección y hacer una compra [90m# src/test/resources/web/opcommerce.feature:31[0m
+    [36mDado que se necesita abrir la pagina nopCommerce login en el navegador "<NAVEGADOR>"[0m
+    [36mY seleccionar login para agregar la direccipon y realizar una compra[0m
+    [36mY escribir el "<CORREO>" en el cuadro de texto de e-mail[0m
+    [36mY escribir contraseña como "<PASSWORD>"[0m
+    [36mY hacemos click en boton login[0m
+    [36mCuando quiero actualizar mi direccion click en My account[0m
+    [36mY hacer click en Addresses[0m
+    [36mY hacer click en boton ADD NEW[0m
+    [36mY escribir "<NEW_NOMBRE>" nuevo en el cuadro de texto nombre[0m
+    [36mY escribir "<NEW_APELLIDO>" nuevo en el cuadro de texto apellido[0m
+    [36mY escribir el "<NEW_CORREO>" nuevo en el cuadro de texto e-mail[0m
+    [36mY escribir "<COMPANY>" en el cuadro de texto compañia[0m
+    [36mY eligir el "<PAIS>" en pais[0m
+    [36mY eligir el "<ESTADO>" en estado[0m
+    [36mY escribir "<CIUDAD>" en el cuadro de texto ciudad[0m
+    [36mY escribir "<DIRECCION>" nuevo  en el cuadro de texto dirección[0m
+    [36mY escribir "<CODIGO_P>" en el cuadro de texto codigo postal[0m
+    [36mY escribir "<TELEFONO>" nuevo en el cuadro de texto número de telefono[0m
+    [36mY hacemos click en save[0m
+    [36mCuando quiro realizar una compra click logo nopCommerce a pagina principal[0m
+    [36mY escribir el "<PRODUCTO>" en cuadro de texto buscar[0m
+    [36mY hacer click en buscar[0m
+    [36mY hacer click en nombre producto encontrado para detalle[0m
+    [36mY hacer click en ADD TO CART para agregar al carito[0m
+    [36mY hacer click en Shopping cart para comprar[0m
+    [36mY hacer Checkbox para aceptar los terminos[0m
+    [36mY hacer click en CHECKOUT para aceptar[0m
+    [36mY hacer click en CONTINUE para validar la direccion[0m
+    [36mY hacer click en CONTINUE para validar tipo de entrega[0m
+    [36mY hacer click en CONTINUE para validar tipo de pago[0m
+    [36mY hacer click en CONTINUE para validar datos[0m
+    [36mY hacer click en CONTINUE para confirmar compra[0m
+    [36mEntonces validamos la compra exitosa[0m
+
+    Ejemplos: 
+
+  @nopCommerce @LOGIN
+  Esquema del escenario: Iniciar sesion, agregar la dirección y hacer una compra    [90m# src/test/resources/web/opcommerce.feature:69[0m
+    [32mDado [0m[32mque se necesita abrir la pagina nopCommerce login en el navegador "[0m[32m[1mchrome[0m[32m"[0m [90m# opcommerceStepDefinition.queSeNecesitaAbrirLaPaginaNopCommerceLoginEnElNavegador(String)[0m
+    [32mY [0m[32mseleccionar login para agregar la direccipon y realizar una compra[0m            [90m# opcommerceStepDefinition.seleccionarLoginParaAgregarLaDirecciponYRealizarUnaCompra()[0m
+    [32mY [0m[32mescribir el "[0m[32m[1mddd@man.com[0m[32m" en el cuadro de texto de e-mail[0m                     [90m# opcommerceStepDefinition.escribirElEnElCuadroDeTextoDeEMail(String)[0m
+    [32mY [0m[32mescribir contraseña como "[0m[32m[1m123456[0m[32m"[0m                                             [90m# opcommerceStepDefinition.escribirContraseñaComo(String)[0m
+    [32mY [0m[32mhacemos click en boton login[0m                                                  [90m# opcommerceStepDefinition.hacemosClickEnBotonLogin()[0m
+    [32mCuando [0m[32mquiero actualizar mi direccion click en My account[0m                       [90m# opcommerceStepDefinition.quieroActualizarMiDireccionClickEnMyAccount()[0m
+    [32mY [0m[32mhacer click en Addresses[0m                                                      [90m# opcommerceStepDefinition.hacerClickEnAddresses()[0m
+    [32mY [0m[32mhacer click en boton ADD NEW[0m                                                  [90m# opcommerceStepDefinition.hacerClickEnBotonADDNEW()[0m
+    [32mY [0m[32mescribir "[0m[32m[1mluis segusndo[0m[32m" nuevo en el cuadro de texto nombre[0m                   [90m# opcommerceStepDefinition.escribirNuevoEnElCuadroDeTextoNombre(String)[0m
+    [32mY [0m[32mescribir "[0m[32m[1mpancho II[0m[32m" nuevo en el cuadro de texto apellido[0m                     [90m# opcommerceStepDefinition.escribirNuevoEnElCuadroDeTextoApellido(String)[0m
+    [32mY [0m[32mescribir el "[0m[32m[1mert@man.com[0m[32m" nuevo en el cuadro de texto e-mail[0m                  [90m# opcommerceStepDefinition.escribirElNuevoEnElCuadroDeTextoEMail(String)[0m
+    [32mY [0m[32mescribir "[0m[32m[1mbueno[0m[32m" en el cuadro de texto compañia[0m                               [90m# opcommerceStepDefinition.escribirEnElCuadroDeTextoCompañia(String)[0m
+    [32mY [0m[32meligir el "[0m[32m[1mUnited States[0m[32m" en pais[0m                                             [90m# opcommerceStepDefinition.eligirElEnPais(String)[0m
+    [32mY [0m[32meligir el "[0m[32m[1mAlabama[0m[32m" en estado[0m                                                 [90m# opcommerceStepDefinition.eligirElEnEstado(String)[0m
+    [32mY [0m[32mescribir "[0m[32m[1mAlabama[0m[32m" en el cuadro de texto ciudad[0m                               [90m# opcommerceStepDefinition.escribirEnElCuadroDeTextoCiudad(String)[0m
+    [32mY [0m[32mescribir "[0m[32m[1mpor aqui[0m[32m" nuevo  en el cuadro de texto dirección[0m                    [90m# opcommerceStepDefinition.escribirNuevoEnElCuadroDeTextoDirección(String)[0m
+    [32mY [0m[32mescribir "[0m[32m[1m111[0m[32m" en el cuadro de texto codigo postal[0m                            [90m# opcommerceStepDefinition.escribirEnElCuadroDeTextoCodigoPostal(String)[0m
+    [32mY [0m[32mescribir "[0m[32m[1m123456789[0m[32m" nuevo en el cuadro de texto número de telefono[0m           [90m# opcommerceStepDefinition.escribirNuevoEnElCuadroDeTextoNúmeroDeTelefono(String)[0m
+    [32mY [0m[32mhacemos click en save[0m                                                         [90m# opcommerceStepDefinition.hacemosClickEnSave()[0m
+    [32mCuando [0m[32mquiro realizar una compra click logo nopCommerce a pagina principal[0m      [90m# opcommerceStepDefinition.quiroRealizarUnaCompraClickLogoNopCommerceAPaginaPrincipal()[0m
+    [32mY [0m[32mescribir el "[0m[32m[1mNokia Lumia 1020[0m[32m" en cuadro de texto buscar[0m                      [90m# opcommerceStepDefinition.escribirElEnCuadroDeTextoBuscar(String)[0m
+    [32mY [0m[32mhacer click en buscar[0m                                                         [90m# opcommerceStepDefinition.hacerClickEnBuscar()[0m
+    [32mY [0m[32mhacer click en nombre producto encontrado para detalle[0m                        [90m# opcommerceStepDefinition.hacerClickEnNombreProductoEncontradoParaDetalle()[0m
